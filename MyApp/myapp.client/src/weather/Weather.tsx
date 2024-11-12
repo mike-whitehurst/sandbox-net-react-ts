@@ -46,7 +46,7 @@ function Weather() {
     );
 
     async function populateWeatherData() {
-        fetch('weatherforecast')
+        fetch('api/weatherforecast')
             .then((response) => {
                 if (response.ok) {
                     return response.json();
